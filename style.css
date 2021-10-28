@@ -1,0 +1,50 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	display: grid;
+	flex-direction: column;
+	height: 100%;
+	grid-template-rows: auto 1fr;
+}
+canvas {
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 1/1) {
+	canvas {
+		height: 100%;
+		width: auto;
+		aspect-ratio: 1 / 1;
+	}
+
+	body {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+}
+
+
+button {
+	min-width: 1em;
+	min-height: 1em;
+	position: relative;
+}
+.controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+	flex-wrap: wrap;
+}
+.col-picker-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+	flex-wrap: wrap;
+}
